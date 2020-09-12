@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Assets
 const bookmark = require('../images/bookmark.svg') as string;
 const code = require('../images/code.svg') as string;
 const cube = require('../images/cube.svg') as string;
