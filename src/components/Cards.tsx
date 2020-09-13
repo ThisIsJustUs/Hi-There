@@ -7,19 +7,19 @@ const cube = require('../images/cube.svg') as string;
 
 const data = [
     {
-        title: 'Shipping Communication',
+        title: 'No Fees',
         description:
             'At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.',
         image: bookmark,
     },
     {
-        title: 'Marketing performance',
+        title: 'Verified Shelter',
         description:
             'Aliquam at bibendum orci. Nullam velit quam, tempor ac feugiat in, sagittis non neque.',
         image: code,
     },
     {
-        title: 'Logistic performance',
+        title: 'Support',
         description:
             'Donec porta quam et turpis tempus feugiat. Praesent non mi ligula.',
         image: cube,
@@ -58,12 +58,13 @@ export const Cards: React.FC = () => {
                 </p>
             </div>
             <div className='container flex justify-center flex-col sm:flex-row'>
-                {data.map((item) => {
+                {data.map((item, i) => {
                     return (
                         <Card
                             title={item.title}
                             description={item.description}
                             image={item.image}
+                            key={i}
                         />
                     );
                 })}

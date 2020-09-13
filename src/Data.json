@@ -1,0 +1,18 @@
+{
+    "Three Cards": [{
+            "title": "No Fees",
+            "description": "At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.",
+            "image": bookmark,
+        },
+        {
+            "title": "Verified Shelter",
+            "description": "Aliquam at bibendum orci. Nullam velit quam, tempor ac feugiat in, sagittis non neque.",
+            "image": code,
+        },
+        {
+            "title": "Support",
+            "description": "Donec porta quam et turpis tempus feugiat. Praesent non mi ligula.",
+            "image": cube,
+        },
+    ]
+}

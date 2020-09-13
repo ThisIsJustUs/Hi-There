@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
 import { Cards } from '../components/Cards';
+import { Signup } from '../components/Signup';
 
 export default () => {
     return (
@@ -9,6 +10,7 @@ export default () => {
             <Navbar />
             <Hero />
             <Cards />
+            <Signup />
         </div>
     );
 };
