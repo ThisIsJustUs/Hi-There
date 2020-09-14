@@ -2,7 +2,10 @@ import React from 'react';
 
 export const SignupButton: React.FC = () => {
     return (
-        <button className='bg-indigo-800 text-white px-4 py-2 rounded-sm'>
+        <button
+            type='submit'
+            className='bg-indigo-800 text-white px-4 py-2 rounded-sm'
+        >
             Join Waitlist
         </button>
     );

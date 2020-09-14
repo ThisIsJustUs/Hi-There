@@ -4,6 +4,12 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+// const { default: keys } = require('./config/keys');
+
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
     /* Your site config here */
     plugins: [
@@ -21,6 +27,12 @@ module.exports = {
                         variants: [`400`, `700`],
                     },
                 ],
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-mailchimp',
+            options: {
+                endpoint: process.env.MAILCHIMP_ENDPOINT,
             },
         },
     ],
