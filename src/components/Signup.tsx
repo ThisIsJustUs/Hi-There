@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
-const drawing = require('../images/steps.png') as string;
+const drawing = require('../images/steps.svg') as string;
 
 export const Signup: React.FC = () => {
     const [email, setEmail] = useState('');
@@ -25,18 +25,23 @@ export const Signup: React.FC = () => {
     };
 
     return (
-        <div className='mx-6'>
-            <div className=''>
-                <img src={drawing} alt='Email' />
-            </div>
-            <div className='flex flex-col'>
-                <h2 className='font-display text-2xl'>
+        <div className='mx-6 my-12'>
+            <div className='my-5'>
+                <h2 className='font-display text-2xl text-center'>
                     No reason to say 'Nein'
                 </h2>
-                <p>
+                <p className='text-center'>
                     Easy as drinking a smoothie. Simply sign up and you'll be
                     the first one to know when we go live.
                 </p>
+            </div>
+            <div className='flex justify-center h-64'>
+                <div
+                    className='bg-center bg-contain bg-no-repeat w-full'
+                    style={{ backgroundImage: `url(${drawing})` }}
+                ></div>
+            </div>
+            <div className='flex flex-col'>
                 <form onSubmit={handleSubmit} className='w-full my-5'>
                     <div className='flex items-center mb-6'>
                         <div>
@@ -46,7 +51,7 @@ export const Signup: React.FC = () => {
                                     id='inline-full-name'
                                     type='email'
                                     name='email'
-                                    placeholder='Email'
+                                    placeholder='justus@hifriend.com'
                                     value={email}
                                     onChange={handleEmailChange}
                                 />

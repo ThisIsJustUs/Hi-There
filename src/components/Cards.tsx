@@ -39,7 +39,9 @@ export const Card: React.FC<{
             <h4 className='font-display text-2xl text-center'>{title}</h4>
             <p className='text-center m-4'>{description}</p>
             <div className='flex justify-center'>
-                <button className='text-indigo-800'>Discover</button>
+                <button className='text-green-500 bg-green-100 px-5 py-1 rounded-md'>
+                    Discover
+                </button>
             </div>
         </div>
     );
