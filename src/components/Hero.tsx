@@ -3,7 +3,7 @@ import { SignupButton } from './Navbar';
 
 export const Hero: React.FC = () => {
     return (
-        <div className='bg-purple-100 py-8 lg:py-16'>
+        <div className='bg-soft py-8 lg:py-16'>
             <div className='container mx-auto flex justify-center flex-col text-center my-5'>
                 <h1 className='text-5xl font-display lg:text-6xl'>
                     Adopt, don't shop 🐶
@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
                     </p>
                 </div>
                 <div className='flex justify-center'>
-                    <button className='mx-3 border-2 px-4 py-2 rounded-sm text-indigo-800 border-solid border-indigo-800'>
+                    <button className='mx-3 border-2 px-4 py-2 rounded-sm text-green4 border-solid border-green4'>
                         Learn More
                     </button>
                     <div className='mx-3'>
